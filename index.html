@@ -18,16 +18,31 @@
                     <img height="350px" src="img/bife.jpg">
                     <h2>Bife com batata</h2>
                     <h2 class="dinheiro">R$ 30,00</h2>
+                    <div class="quantidade-container">
+                        <button class="quantidade-button" onclick="decreaseValue(this)">-</button>
+                        <input type="number" class="quantidade-input" value="0" min="0">
+                        <button class="quantidade-button" onclick="increaseValue(this)">+</button>
+                    </div>
                 </div>
                 <div class="card">
                     <img height="350px" src="img/coxa.jpg">
                     <h2>Coxa de frango crocante</h2>
                     <h2 class="dinheiro">R$ 25,00</h2>
+                    <div class="quantidade-container">
+                        <button class="quantidade-button" onclick="decreaseValue(this)">-</button>
+                        <input type="number" class="quantidade-input" value="0" min="0">
+                        <button class="quantidade-button" onclick="increaseValue(this)">+</button>
+                    </div>
                 </div>
                 <div class="card">
                     <img height="350px" src="img/panela.jpg">
                     <h2>Carne de panela</h2>
                     <h2 class="dinheiro">R$ 22,00</h2>
+                    <div class="quantidade-container">
+                        <button class="quantidade-button" onclick="decreaseValue(this)">-</button>
+                        <input type="number" class="quantidade-input" value="0" min="0">
+                        <button class="quantidade-button" onclick="increaseValue(this)">+</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -39,16 +54,31 @@
                     <img height="350px" src="img/farofa.jpg">
                     <h2>Farofa</h2>
                     <h2 class="dinheiro">R$ 10,00</h2>
+                    <div class="quantidade-container">
+                        <button class="quantidade-button" onclick="decreaseValue(this)">-</button>
+                        <input type="number" class="quantidade-input" value="0" min="0">
+                        <button class="quantidade-button" onclick="increaseValue(this)">+</button>
+                    </div>
                 </div>
                 <div class="card">
                     <img height="350px" src="img/salad.jpg">
                     <h2>Salada</h2>
                     <h2 class="dinheiro">R$ 8,00</h2>
+                    <div class="quantidade-container">
+                        <button class="quantidade-button" onclick="decreaseValue(this)">-</button>
+                        <input type="number" class="quantidade-input" value="0" min="0">
+                        <button class="quantidade-button" onclick="increaseValue(this)">+</button>
+                    </div>
                 </div>
                 <div class="card">
                     <img height="350px" src="img/torresmo.jpg">
                     <h2>Torresmo</h2>
                     <h2 class="dinheiro">R$ 12,00</h2>
+                    <div class="quantidade-container">
+                        <button class="quantidade-button" onclick="decreaseValue(this)">-</button>
+                        <input type="number" class="quantidade-input" value="0" min="0">
+                        <button class="quantidade-button" onclick="increaseValue(this)">+</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -60,10 +90,18 @@
             <br>
             <input placeholder="email" type="email" name="email" id="">
         </div>
-        <button>Calcular</button>
+        <button class="calcular" type="submit">Calcular</button>
         <div class="resultados">
-            
+            <h1>Caro</h1>
+            <p>Seguem os dados do seu pedido.</p>
+            <p>O seu pedido é:</p>
+            <ul>
+                <li></li>
+                <li></li>
+            </ul>
+            <h1>Preço final: R$</h1>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
