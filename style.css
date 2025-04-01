@@ -1,80 +1,76 @@
 body {
     text-align: center;
     background-color: grey;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
     background-color: white;
-    margin-left: 200px;
-    margin-right: 200px;
+    max-width: 900px;
+    margin: auto;
     border-radius: 15px;
-    margin-bottom: 200px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.home{
+.home {
     margin: 10px;
-    width: 95%;
+    width: 100%;
+    max-width: 600px;
 }
 
-.comida{
+.comida, .acompanhamentos, .dados {
     background-color: rgb(230, 230, 230);
-    margin-left: 20px;
-    margin-right: 20px;
     border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
 }
 
-.pratos{
+.pratos {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 15px;
 }
 
-.acompanhamentos{
-    background-color: rgb(230, 230, 230);
-    margin-left: 20px;
-    margin-right: 20px;
-    border-radius: 15px;
-}
-
-.card{
+.card {
     background-color: white;
-    padding: 7px;
-    margin-right: 32px;
-    margin-left: 32px;
-    margin-bottom: 20px;
+    padding: 10px;
     border-radius: 10px;
+    width: 250px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.dinheiro{
+.dinheiro {
     color: green;
+    font-weight: bold;
 }
 
-.dados{
-    background-color: rgb(230, 230, 230);
-    margin-left: 20px;
-    margin-right: 20px;
-    border-radius: 15px;
-}
-
-input{
+input, .calcular {
     border: none;
     border-radius: 5px;
-    margin-bottom: 10px;
-    height: 30px;
-    width: 500px;
+    height: 40px;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 10px;
+    padding: 5px;
 }
 
-.calcular{
+.calcular {
     background-color: blue;
     color: white;
-    border: none;
-    margin-top: 20px;
-    border-radius: 5px;
-    height: 30px;
-    width: 500px;
+    font-size: 16px;
+    cursor: pointer;
 }
 
-.resultados{
+.calcular:hover {
+    background-color: darkblue;
+}
+
+.resultados {
     text-align: left;
     padding: 10px;
 }
@@ -85,14 +81,21 @@ input{
     justify-content: center;
     margin-top: 10px;
 }
+
 .quantidade-button {
     border: none;
     padding: 5px 10px;
     cursor: pointer;
     border-radius: 5px;
     font-size: 16px;
-    cursor: pointer;
+    background-color: lightgray;
 }
+
+.quantidade-button:hover {
+    background-color: gray;
+    color: white;
+}
+
 .quantidade-input {
     width: 50px;
     text-align: center;
@@ -100,4 +103,41 @@ input{
     margin: 0 5px;
     padding: 5px;
     border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        padding: 15px;
+        margin-bottom: 200px;
+    }
+
+    .pratos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    input, .calcular {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .quantidade-container {
+        flex-direction: column;
+    }
+
+    .quantidade-button {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .quantidade-input {
+        width: 100%;
+    }
 }
