@@ -84,22 +84,19 @@
         </div>
         <div class="dados">
             <h1>Dados pessoais</h1>
-            <input placeholder="nome" type="text" name="nome" id="">
+            <input placeholder="nome" type="text" name="nome" id="nome">
             <br>
             <input placeholder="telefone" type="number" name="telefone" id="">
             <br>
             <input placeholder="email" type="email" name="email" id="">
         </div>
-        <button class="calcular" type="submit">Calcular</button>
-        <div class="resultados">
-            <h1>Caro</h1>
+        <button class="calcular" onclick="calcularPedido()">Calcular</button>
+        <div id="resultado" class="resultados">
+            <h1 id="saudacao"></h1>
             <p>Seguem os dados do seu pedido.</p>
             <p>O seu pedido é:</p>
-            <ul>
-                <li></li>
-                <li></li>
-            </ul>
-            <h1>Preço final: R$</h1>
+            <ul id="resumoPedido"></ul>
+            <h1 id="precoFinal"></h1>
         </div>
     </div>
     <script src="script.js"></script>
