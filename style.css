@@ -1,0 +1,78 @@
+body {
+    text-align: center;
+    background-color: grey;
+}
+
+.container {
+    background-color: white;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 15px;
+}
+
+.home{
+    margin: 10px;
+    width: 95%;
+}
+
+.comida{
+    background-color: rgb(230, 230, 230);
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 15px;
+}
+
+.pratos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.acompanhamentos{
+    background-color: rgb(230, 230, 230);
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 15px;
+}
+
+.card{
+    background-color: white;
+    padding: 7px;
+    margin-right: 32px;
+    margin-left: 32px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.dinheiro{
+    color: green;
+}
+
+.dados{
+    background-color: rgb(230, 230, 230);
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 15px;
+}
+
+input{
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: 30px;
+    width: 500px;
+}
+
+button{
+    background-color: blue;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    height: 30px;
+    width: 500px;
+}
+
+.resultados{
+    
+}
